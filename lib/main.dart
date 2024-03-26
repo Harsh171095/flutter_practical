@@ -1,11 +1,13 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:flutter_practical/screen/dashboard/dashboard.screen.dart';
 import 'package:flutter_practical/screen/main/main.screen.dart';
 import 'package:provider/provider.dart';
 
 import 'screen/list/item_list.screen.dart';
 import 'screen/list/view model/item_list.viewmodel.dart';
+import 'screen/patterns list/patterns_list.screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +40,9 @@ class MyApp extends StatelessWidget {
         initialRoute: MainScreen.routName,
         routes: {
           MainScreen.routName: (context) => MainScreen(),
+          DashboardScreen.routName: (context) => DashboardScreen(),
           ItemListScreen.routName: (context) => ItemListScreen(),
+          PatternsListScreen.routName: (context) => PatternsListScreen(),
         },
       ),
     );

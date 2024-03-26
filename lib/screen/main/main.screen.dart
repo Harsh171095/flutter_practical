@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:flutter_practical/screen/dashboard/dashboard.screen.dart';
 import 'package:flutter_practical/screen/list/item_list.screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -34,7 +35,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
     animation.forward();
 
     Future.delayed(Duration(seconds: 5), () {
-      Navigator.of(context).pushReplacementNamed(ItemListScreen.routName);
+      Navigator.of(context).pushReplacementNamed(DashboardScreen.routName);
     });
   }
 
